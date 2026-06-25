@@ -3,7 +3,7 @@ window.start_instructions = window.start_instructions || [];
 
 /* Welcome page */
 const welcome = {
-  type: jsPsychHtmlKeyboardResponse,
+  type: jsPsychHtmlButtonResponse,
   stimulus: "Welcome to this study on detecting microexpressions! Press any key to begin."
 };
 window.start_instructions.push(welcome);
@@ -24,7 +24,7 @@ window.start_instructions.push(consent);
 
 /* Instruction page */
 const instruction = {
-  type: jsPsychHtmlKeyboardResponse,
+  type: jsPsychHtmlButtonResponse,
   stimulus: `
     <p>In this study, we are interested in how people perceive subtle emotional signals in human faces. 
     Research suggests that facial expressions often contain very brief and subtle changes in human mimic, also referred to as microexpressions. 
