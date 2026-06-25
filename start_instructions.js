@@ -1,12 +1,12 @@
 /* Create timeline */
-const start_instructions = [];
+const window.start_instructions = [];
 
 /* Welcome page */
 const welcome = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: "Welcome to this study on detecting microexpressions! Press any key to begin."
 };
-start_instructions.push(welcome);
+window.start_instructions.push(welcome);
 
 /* Consent page */
 const consent = {
@@ -20,7 +20,7 @@ const consent = {
     task: "consent"
   }
 };
-start_instructions.push(consent);
+window.start_instructions.push(consent);
 
 /* Instruction page */
 const instruction = {
@@ -55,4 +55,4 @@ const instruction = {
   `
 };
 
-start_instructions.push(instruction);
+window.start_instructions.push(instruction);
