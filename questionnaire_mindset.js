@@ -1,5 +1,5 @@
 /* Create timeline */
-const questionnaire_mindset = [];
+const window.questionnaire_mindset = [];
 
 /* Create items */
 const questionnaire_instruction = {
@@ -15,7 +15,7 @@ const questionnaire_instruction = {
   `
 };
 
-questionnaire_mindset.push(questionnaire_instruction);
+window.questionnaire_mindset.push(questionnaire_instruction);
 
 const likert_scale = ["strongly agree", "agree", "mostly agree", "mostly disagree", "disagree", "strongly disagree"];
 
@@ -26,7 +26,7 @@ const item1 = {
   data: {question: "item1"}
 };
 
-questionnaire_mindset.push(item1);
+window.questionnaire_mindset.push(item1);
 
 const item2 = {
   type: jsPsychButtonResponse,
@@ -35,7 +35,7 @@ const item2 = {
   data: {question: "item2"}
 };
 
-questionnaire_mindset.push(item2);
+window.questionnaire_mindset.push(item2);
 
 const item3 = {
   type: jsPsychButtonResponse,
