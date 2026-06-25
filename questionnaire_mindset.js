@@ -1,5 +1,5 @@
 /* Create timeline */
-const window.questionnaire_mindset = [];
+window.questionnaire_mindset = window.questionnaire_mindset || [];
 
 /* Create items */
 const questionnaire_instruction = {
