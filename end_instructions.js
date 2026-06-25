@@ -1,5 +1,5 @@
 /* Create timeline */
-const window.end_instructions = [];
+window.end_instructions = window.end_instructions || [];
 
 /* Debriefing page */
 const debriefing = {
