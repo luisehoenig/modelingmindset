@@ -1,42 +1,39 @@
-<!DOCTYPE html> 
-<html> <!-- indicates website -->
-<head> <!-- non-visible code -->
+<!DOCTYPE html>
+<html>
+<head>
   <meta charset="UTF-8">
+
   <style>
-.jspsych-content {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
-}
-</style>
+    .jspsych-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+  </style>
 
-  <!-- load plugins -->
-script src="https://unpkg.com/jspsych@8.0.0"></script>
-  <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script> /* for keyresponse */
-  <script src="https://unpkg.com/@jspsych/plugin-image-keyboard-response"></script> /* for images */
-  <script src="https://unpkg.com/@jspsych/plugin-button-response@2.0.0"></script> /* for consent responses */
-  <script src="https://unpkg.com/@jspsych/plugin-preload@2.0.0"></script> /* for preloading images */
+  <!-- jsPsych core -->
+  <script src="https://cdn.jsdelivr.net/npm/jspsych@8.0.0/dist/index.browser.min.js"></script>
 
-  <link
-    href="https://unpkg.com/jspsych@8.0.0/css/jspsych.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+  <!-- plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-keyboard-response@2.0.0/dist/index.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@jspsych/plugin-image-keyboard-response@2.0.0/dist/index.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@jspsych/plugin-button-response@2.0.0/dist/index.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@jspsych/plugin-preload@2.0.0/dist/index.browser.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspsych@8.0.0/css/jspsych.css">
 </head>
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspsych@8.0.0/css/jspsych.css">
-</head>
+<body>
 
-<body> <!-- visible website -->
-
-  <!-- load modules first -->
+  <!-- modules -->
   <script src="start_instructions.js"></script>
   <script src="face_trials.js"></script>
   <script src="questionnaire_mindset.js"></script>
   <script src="end_instructions.js"></script>
 
-  <!-- main experiment last -->
+  <!-- main -->
   <script src="experiment_mindset.js"></script>
-  
+
 </body>
 </html>
