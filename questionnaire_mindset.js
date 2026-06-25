@@ -3,7 +3,7 @@ window.questionnaire_mindset = window.questionnaire_mindset || [];
 
 /* Create items */
 const questionnaire_instruction = {
-  type: jsPsychHtmlButtonResponse,
+  type: jsPsychHtmlKeyboardResponse,
   stimulus: `
     <p><strong>Questionnaire</strong></p>
 
