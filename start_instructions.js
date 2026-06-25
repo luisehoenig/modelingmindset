@@ -1,5 +1,5 @@
 /* Create timeline */
-const window.start_instructions = [];
+window.start_instructions = window.start_instructions || [];
 
 /* Welcome page */
 const welcome = {
