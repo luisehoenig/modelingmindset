@@ -44,4 +44,4 @@ const item3 = {
   data: {question: "item3"}
 };
 
-questionnaire_mindset.push(item3);
+window.questionnaire_mindset.push(item3);
