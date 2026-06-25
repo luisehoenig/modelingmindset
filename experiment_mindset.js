@@ -27,9 +27,9 @@ const preload = {
 /* create experiment timeline */
 
 timeline.push(preload);
-timeline.push(...start_instructions);
-timeline.push(...face_trials);
-timeline.push(...questionnaire_mindset);
-timeline.push(...end_instructions);
+timeline.push(...window.start_instructions);
+timeline.push(...window.face_trials);
+timeline.push(...window.questionnaire_mindset);
+timeline.push(...window.end_instructions);
 
 jsPsych.run(timeline);
