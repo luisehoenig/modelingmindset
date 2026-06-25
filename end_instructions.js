@@ -1,5 +1,5 @@
 /* Create timeline */
-const end_instructions = [];
+const window.end_instructions = [];
 
 /* Debriefing page */
 const debriefing = {
@@ -23,11 +23,11 @@ const debriefing = {
   `
 };
 
-end_instructions.push(debriefing);
+window.end_instructions.push(debriefing);
 
 /* End page */
 const end = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus: "Thank you for your time. This experiment is now ended and you can close this tab."
 };
-end_instructions.push(end);
+window.end_instructions.push(end);
