@@ -7,4 +7,4 @@ const placeholder = {
   stimulus: "Placeholder"
 }
 
-window.face_trials.push(placeholder);
+window.face_trials.push(placeholder)
