@@ -20,7 +20,7 @@ window.questionnaire_mindset.push(questionnaire_instruction);
 const likert_scale = ["strongly agree", "agree", "mostly agree", "mostly disagree", "disagree", "strongly disagree"];
 
 const item1 = {
-  type: jsPsychButtonResponse,
+  type: jsPsychHtmlButtonResponse,
   stimulus: "You have a certain amount of intelligence, and you can't really do much to change it.",
   choices: likert_scale,
   data: {question: "item1"}
@@ -29,7 +29,7 @@ const item1 = {
 window.questionnaire_mindset.push(item1);
 
 const item2 = {
-  type: jsPsychButtonResponse,
+  type: jsPsychHtmlButtonResponse,
   stimulus: "Your intelligence is something about you that you can't change very much.",
   choices: likert_scale,
   data: {question: "item2"}
@@ -38,7 +38,7 @@ const item2 = {
 window.questionnaire_mindset.push(item2);
 
 const item3 = {
-  type: jsPsychButtonResponse,
+  type: jsPsychHtmlButtonResponse,
   stimulus: "You can learn new things, but you can't really change your basic intelligence.",
   choices: likert_scale,
   data: {question: "item3"}
