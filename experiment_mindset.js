@@ -3,6 +3,17 @@ const jsPsych = initJsPsych();
 
 const timeline = [];
 
+/* Random assignment to condition */
+const condition = jsPsych.randomization.sampleWithoutReplacement(
+  ["condition1", "condition2"],
+  1
+)[0];
+
+/* Save condition in all data */
+jsPsych.data.addProperties({
+  condition: condition
+});
+
 /* Preload stimuli */
 const faces = [
   "img/139_32.jpg",
