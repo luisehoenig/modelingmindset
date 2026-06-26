@@ -19,7 +19,7 @@ const consent = {
 window.start_instructions.push(consent);
 
 /* Condition 1 */
-const instruction_condition1 = {
+window.instruction_condition1 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
     <p>HIER TEXT FÜR CONDITION 1</p>
@@ -30,7 +30,7 @@ const instruction_condition1 = {
 };
 
 /* Condition 2 */
-const instruction_condition2 = {
+window.instruction_condition2 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
     <p>HIER TEXT FÜR CONDITION 2</p>
