@@ -37,6 +37,25 @@ const preload = {
 
 /* create experiment timeline */
 
+console.log("condition:", condition);
+console.log("instruction1:", window.instruction_condition1);
+console.log("instruction2:", window.instruction_condition2);
+
+timeline.push(preload);
+timeline.push(...window.start_instructions);
+
+timeline.push({
+  type: jsPsychHtmlButtonResponse,
+  stimulus: `<p>DEBUG: Condition is ${condition}</p>`,
+  choices: ["continue"]
+});
+
+if (condition === "condition1") {
+  timeline.push(window.instruction_condition1);
+} else {
+  timeline.push(window.instruction_condition2);
+}
+
 timeline.push(preload);
 timeline.push(...window.start_instructions);
 
