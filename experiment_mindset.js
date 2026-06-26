@@ -41,9 +41,9 @@ timeline.push(preload);
 timeline.push(...window.start_instructions);
 
 if (condition === "condition1") {
-  timeline.push(instruction_condition1);
+  timeline.push(window.instruction_condition1);
 } else {
-  timeline.push(instruction_condition2);
+  timeline.push(window.instruction_condition2);
 }
 
 timeline.push(...window.face_trials);
