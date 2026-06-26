@@ -23,7 +23,10 @@ const item1 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: "You have a certain amount of intelligence, and you can't really do much to change it.",
   choices: likert_scale,
-  data: {question: "item1"}
+  data: {
+  task: "mindset",
+  question: "item1"
+}
 };
 
 window.questionnaire_mindset.push(item1);
@@ -32,7 +35,10 @@ const item2 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: "Your intelligence is something about you that you can't change very much.",
   choices: likert_scale,
-  data: {question: "item2"}
+  data: {
+  task: "mindset",
+  question: "item2"
+}
 };
 
 window.questionnaire_mindset.push(item2);
@@ -41,7 +47,10 @@ const item3 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: "You can learn new things, but you can't really change your basic intelligence.",
   choices: likert_scale,
-  data: {question: "item3"}
+  data: {
+  task: "mindset",
+  question: "item3"
+}
 };
 
 window.questionnaire_mindset.push(item3);
