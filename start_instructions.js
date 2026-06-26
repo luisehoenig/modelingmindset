@@ -1,7 +1,5 @@
-/* Create timeline */
 window.start_instructions = window.start_instructions || [];
 
-/* Welcome page */
 const welcome = {
   type: jsPsychHtmlButtonResponse,
   stimulus: "Welcome to this study on detecting microexpressions!",
@@ -9,7 +7,6 @@ const welcome = {
 };
 window.start_instructions.push(welcome);
 
-/* Consent page */
 const consent = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
@@ -17,36 +14,28 @@ const consent = {
     <p>Do you agree to participate in this study?</p>
   `,
   choices: ["I agree", "I do not agree"],
-  data: {
-    task: "consent"
-  }
+  data: { task: "consent" }
 };
 window.start_instructions.push(consent);
 
-/* Condition 1 instruction */
+/* Condition 1 */
 const instruction_condition1 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
-    <p>TEXT FÜR CONDITION 1</p>
+    <p>HIER TEXT FÜR CONDITION 1</p>
     <p>Press the button to start the experiment.</p>
   `,
   choices: ["Start experiment"],
-  data: {
-    task: "instruction",
-    condition_instruction: "condition1"
-  }
+  data: { task: "instruction", instruction_condition: "condition1" }
 };
 
-/* Condition 2 instruction */
+/* Condition 2 */
 const instruction_condition2 = {
   type: jsPsychHtmlButtonResponse,
   stimulus: `
-    <p>TEXT FÜR CONDITION 2</p>
+    <p>HIER TEXT FÜR CONDITION 2</p>
     <p>Press the button to start the experiment.</p>
   `,
   choices: ["Start experiment"],
-  data: {
-    task: "instruction",
-    condition_instruction: "condition2"
-  }
+  data: { task: "instruction", instruction_condition: "condition2" }
 };
